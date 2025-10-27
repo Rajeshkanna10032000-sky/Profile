@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/RK_favicon.png" type="image/png" />
+    <title>Rajesh kanna</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    .greeting {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out 0.3s forwards;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      /* margin: 25px auto 40px; */
+      max-width: 600px;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out 1.2s forwards;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 20px;
+      /* justify-content: center; */
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out 1.5s forwards;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+      /* padding: 15px 40px; */
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .primary-btn {
+      background: white;
+      color: #667eea;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      background: #ffd700;
+      color: #333;
+    }
+
+    .secondary-btn {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .secondary-btn:hover {
+      background: white;
+      color: #667eea;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      /* justify-content: center; */
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out 1.8s forwards;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 29%;
+      background: rgb(85 88 98);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .social-icon:hover {
+      background: white;
+      color: #667eea;
+      transform: translateY(-5px) rotate(360deg);
+    }
+
+    .scroll-down {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-down::after {
+      content: "↓";
+      color: white;
+      font-size: 2rem;
+    }
+
+    @keyframes bounce {
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .typing-text {
+        font-size: 1.2rem;
+      }
+
+      .description {
+        font-size: 1rem;
+      }
+
+      .button-group {
+        flex-direction: column;
+        /* align-items: center; */
+      }
+
+      .primary-btn,
+      .secondary-btn {
+        width: 200px;
+      }
+    }
+  </style>
+
+  <body>
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/Rk_logo4.png" alt="" style="width: 206px"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner-area owl-carousel" id="home">
+      <div class="single_slide_banner slide_bg1">
+        <div class="container">
+          <div class="row fullscreen d-flex align-items-center">
+            <div class="banner-content col-lg-12 justify-content-center">
+              <p class="greeting">Hello, I'm</p>
+              <h1 class="greeting" style="color: rgb(255, 255, 255)">
+                Rajesh Kanna
+              </h1>
+              <p class="description">
+                Passionate about creating beautiful and functional web
+                experiences. Transforming ideas into reality through clean code
+                and creative design.
+              </p>
+              <div class="button-group">
+                <a href="#about" class="primary-btn">About Me</a>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  class="social-icon"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    />
+                  </svg>
+                </a>
+
+                <!-- <a href="#" class="social-icon" aria-label="GitHub">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                </a> -->
+                <!-- <a href="#" class="social-icon" aria-label="Twitter">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    />
+                  </svg>
+                </a> -->
+                <a
+                  href="mailto:rajeshkannan10032000@gmail.com"
+                  class="social-icon"
+                  aria-label="Email"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================ Start About Area =================-->
+    <section id="about" class="about-area section_gap gray-bg">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- <div class="col-lg-5 about-left">
+            <img class="img-fluid" src="img/about1.png" alt="" />
+          </div> -->
+          <div class="col-lg-12 col-md-12 about-right">
+            <div class="main-title text-center">
+              <h1>about myself</h1>
+            </div>
+            <div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+              <p>
+                I’m a Full Stack Web Developer specializing in PHP, Laravel, and
+                React.js. I build secure, scalable, and user-friendly web
+                applications with clean architecture and a strong attention to
+                UX details. I enjoy turning ideas into digital products that
+                feel intuitive and deliver real business impact.
+              </p>
+              <p>
+                My work spans API integration, component-driven frontends, and
+                backend development focused on performance, maintainability, and
+                optimized workflows. I’m always exploring better ways to create
+                seamless experiences that connect users with the technology they
+                need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End About Area =================-->
+    <!--================ Start Testimonial Area =================-->
+    <div class="section_gap testimonial_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-left">
+            <div class="active_testimonial owl-carousel" data-slider-id="1">
+              <!-- Skill 1 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/coding_15724193.png" alt="" />
+                  <h4>PHP & Laravel</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Expert in MVC architecture, REST API development,
+                    authentication (Sanctum, JWT), role-based access, and
+                    scalable backend logic with MySQL database integration.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/science_10496780.png" alt="" />
+                  <h4>React.js</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Building dynamic UI, reusable components, state management
+                    using Hooks and Redux, connecting frontend with REST APIs
+                    for real-time data updates.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/database_5673315.png" alt="" />
+                  <h4>Database</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Strong in database design, table relationships, indexing,
+                    stored procedures, triggers, and query optimization for
+                    performance.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/server_2828883.png" alt="" />
+                  <h4>Full Stack Development</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    End-to-end web solutions from UI to backend API,
+                    authentication, security, deployment and version control
+                    using Git.
+                  </p>
+                </div>
+              </div>
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/js_6129926.png" alt="" />
+                  <h4>JavaScript (ES6+)</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Strong understanding of modern JavaScript concepts including
+                    async/await, modules, promises, DOM manipulation and
+                    data-driven logic.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill 6 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/html_7069770.png" alt="" />
+                  <h4>HTML5 & CSS3</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Pixel-perfect responsive UI, flexbox, grid layouts,
+                    animations, custom theme styling with cross-browser
+                    compatibility.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill 7 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/api_5055195.png" alt="" />
+                  <h4>API Integration</h4>
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Expertise integrating secure REST APIs including Auth,
+                    Payment, SMS, and third-party services using Laravel or
+                    fetch/Axios in React.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill 8 -->
+              <div class="single_testimonial">
+                <div class="testimonial_head">
+                  <img src="img/blog/social_15466163.png" alt="" />
+                  <h4>Git & Deployment</h4>
+                  <!--  -->
+                </div>
+                <div class="testimonial_content">
+                  <p>
+                    Version control using Git & GitHub, server deployment in
+                    cPanel, security configs, HTTPS setup and performance
+                    monitoring.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 offset-lg-1">
+            <div class="testimonial_logos">
+              <div class="top_logos">
+                <img
+                  src="img/about1.png"
+                  alt=""
+                  style="
+                    height: 360px;
+                    width: 353px;
+                    position: relative;
+                    top: -49px;
+                    left: 19px;
+                    border-radius: 15px;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================ End Testimonial Area =================-->
+
+    <!--================ Start Portfolio Area =================-->
+    <section class="section_gap portfolio_area" id="work">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="main-title">
+              <h1>My Recent Projects</h1>
+              <p>
+                Applications I have developed using PHP, Laravel, React.js,
+                MySQL and API services. Performance, security and clean UX are
+                always my focus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="projects_fillter">
+              <ul class="filter list">
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".fullstack">Full Stack</li>
+                <li data-filter=".frontend">Frontend</li>
+                <li data-filter=".backend">Backend</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Items -->
+        <div class="projects_inner row grid">
+          <div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
+
+          <!-- Project 1 -->
+          <div class="col-lg-6 col-sm-6 fullstack grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project8.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>ERP Management System</h4>
+                </a>
+                <p>Laravel + MySQL | Multi-role Admin & Reports</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-3 col-sm-6 backend grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project2.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>API Integration System</h4>
+                </a>
+                <p>Secure third-party API services in Laravel</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-3 col-sm-6 fullstack grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project5.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>Inventory Management App</h4>
+                </a>
+                <p>Laravel Backend + User Roles + Stock Tracking</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-6 col-sm-6 frontend grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/Project1.png"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>React Admin Dashboard</h4>
+                </a>
+                <p>Interactive Analytics UI + API Data</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-lg-6 col-sm-6 fullstack grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project4.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>E-Commerce Web App</h4>
+                </a>
+                <p>React UI + Laravel API | Cart + Payment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-6 col-sm-6 backend grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project3.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>MySQL Automation</h4>
+                </a>
+                <p>Cron Jobs + Database Optimization</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="col-lg-3 col-sm-6 frontend grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project6.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>Portfolio Website</h4>
+                </a>
+                <p>HTML, CSS, JS Responsive Layout</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="col-lg-3 col-sm-6 fullstack grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/works/project7.jpg"
+                alt="Project"
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kanna-m-66a9b5254/"
+                  target="_blank"
+                >
+                  <h4>Task Management App</h4>
+                </a>
+                <p>Laravel + JWT Auth | CRUD + Roles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--================ End Portfolio Area =================-->
+
+    <!--================ Start Newsletter Area =================-->
+    <section class="section_gap newsletter-area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="main-title">
+              <h1>Join Our Newsletter</h1>
+              <p>
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the difference in price. You may see some for
+                as low as $.17 each.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row newsletter_form justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="d-flex flex-row" id="mc_embed_signup">
+              <form
+                class="w-100"
+                novalidate="true"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get"
+              >
+                <div class="navbar-form">
+                  <div class="input-group add-on">
+                    <input
+                      class="form-control"
+                      name="EMAIL"
+                      placeholder="Your email address"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Your email address'"
+                      required=""
+                      type="email"
+                    />
+                    <div style="position: absolute; left: -5000px">
+                      <input
+                        name="b_36c4fd991d266f23781ded980_aefe40901a"
+                        tabindex="-1"
+                        value=""
+                        type="text"
+                      />
+                    </div>
+                    <div class="input-group-btn">
+                      <button class="genric-btn text-uppercase">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="info mt-20"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Newsletter Area =================-->
+
+    <!--================ Start Footer Area =================-->
+    <footer class="footer_area section">
+      <div class="container">
+        <div class="row footer_inner justify-content-center">
+          <div class="col-lg-6 text-center">
+            <aside class="f_widget social_widget">
+              <div class="f_logo">
+                <img src="img/border_logo.png" style="width: 150px" alt="" />
+              </div>
+              <div class="f_title">
+                <h4>Follow Me</h4>
+              </div>
+            </aside>
+            <div class="copyright">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
